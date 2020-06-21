@@ -39,7 +39,7 @@ if [ "$1" = "--help" ]; then
 fi
 STRCOMPILE="$(color 2 Compiling)"
 COMPILEDIR="release_build"
-COMPILEFLAGS="-DCMAKE_INSTALL_PREFIX="
+COMPILEFLAGS="-DCMAKE_INSTALL_PREFIX=/usr/local"
 export DESTDIR="$(cd "$(dirname "$0")" && pwd)"
 BUILDTYPE="$(color 6 release)"
 SCRIPT_ARGC=1 # number of arguments eaten by this script
